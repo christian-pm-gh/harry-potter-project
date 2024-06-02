@@ -2,41 +2,46 @@
 
 /* Estilo para el cuerpo de la página */
 body {
-    font-family: Mononoki Nerd Font;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    color: #333;
 }
 
 /* Estilo para los encabezados */
-h1 {
-    font-size: 48px;
-    color: #8f0606;
+h1, h2 {
     text-align: center;
-    padding: 20px 0;
+    color: #444;
+}
+
+/* Estilo para los encabezados principales */
+h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 36px;
-    color: #06088f;
-    text-align: center;
-    padding: 20px 0;
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
-/* Estilo para las listas */
-ul {
-    list-style-type: none;
-    padding: 0;
+/* Estilo para las listas ordenadas */
+ol {
     max-width: 600px;
-    margin: 20px auto;
-    background-color: #ffffff6c;
-
+    margin: 0 auto;
+    padding: 0 20px; /* Ajuste de padding izquierdo */
+    background-color: #fff;
+    border: 5px solid #ddd;
     border-radius: 5px;
+    padding: 25px;
 }
 
-/* Estilo para los elementos de lista */
+/* Estilo para los elementos de la lista */
 li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
 }
 
 li:last-child {
@@ -45,10 +50,33 @@ li:last-child {
 
 /* Estilo para enlaces (opcional) */
 a {
-    color: #0066cc;
+    color: #1a73e8;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+/* Estilo para mejorar la presentación en dispositivos móviles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    ol {
+        padding: 10px;
+    }
+
+    li {
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
 }
